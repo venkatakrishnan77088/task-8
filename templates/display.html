@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>shop Cart</title>
+    </head>
+    <body>
+       <table border="2">
+        <tr>
+            <th>Name</th>
+            <th>mobile_number</th>
+            <th>price</th>
+        </tr>
+        {% for i in data %}
+        <tr>
+            <td>{{i.name}}</td>
+            <td>{{i.mobile}}</td>
+            <td>{{i.amount}}</td>
+        </tr>
+        {% endfor %}
+       </table>
+    </body>
+</html>
